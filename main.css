@@ -1,0 +1,27 @@
+.container{
+    width: 500px;
+    height: 300px;
+    margin: 40px auto;
+    border: 1px solid black;
+
+    display: flex; /*alinha os itens horizontalmente*/
+    flex-direction: row; /*define a forma de alinhamento dos itens
+                            row: fica horizontal
+                            column: fica vertical */
+    justify-content: center; /*define o posicionamento dos iten dentro da div, 
+                                center, right, space between...
+                                Trabalha no mesmo eixo que o flex direction*/
+    align-items: center; /* faz o alinhamento no eixo contrário ao justify content */
+    flex-wrap: wrap; /*se os itens não cabem na largura do container pai, jogar o que não
+    coube pra baixo*/
+    align-content: center; /*trabalha o espaço em branco entre os itens*/
+}
+
+.item{
+    width: 80px; /*Se colocar largura de 200px por exemplo, pelo container pai ter apenas 500px
+    e 4 filhos, cada filho ocupa 125px de largura, e não os 200, por conta do flexbox, que não
+    deixa ultrapassar esse valor*/
+    height: 80px;
+    background-color: bisque;
+    border: 1px solid black;
+}
